@@ -21,9 +21,6 @@ public class MainActivity extends AppCompatActivity {
 
     Button colorButton;
     Spinner spinner;
-
-
-
     //ArrayList<String> colors;
     String[] colorTest;
     View myView;
@@ -52,6 +49,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 //set a variable to spinner value
+                //notify user of the color selected
+                //change view background depending upon selection
                 String text = spinner.getSelectedItem().toString();
                 Toast toast = Toast.makeText(getApplicationContext(), text, Toast.LENGTH_SHORT);
                 toast.show();
@@ -60,6 +59,9 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+
+
 
     }
 }

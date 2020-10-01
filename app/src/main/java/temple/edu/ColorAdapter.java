@@ -16,7 +16,7 @@ public class ColorAdapter extends BaseAdapter {
     //ArrayList<String> colors;
     String[] colors;
 
-
+    //initial constructor
     public ColorAdapter(Context context, String[] colors) {
         this.context = context;
         this.colors = colors;
@@ -42,12 +42,8 @@ public class ColorAdapter extends BaseAdapter {
     public View getView(int position, View view, ViewGroup parent) {
         TextView textView = new TextView(context);
 
-        if (view == null) {
-            textView = new TextView(context);
-        } else {
-            textView = (TextView) view;
-        }
 
+        //set value to textview objects
         textView.setText(colors[position]);
         textView.setBackgroundColor(Color.parseColor(colors[position]));
 
@@ -58,8 +54,10 @@ public class ColorAdapter extends BaseAdapter {
     public View getDropDownView(int position, View view, ViewGroup parent) {
         TextView txtView = new TextView(context);
 
-        return super.getDropDownView(position, view, parent);
+        return super.getDropDownView(position, txtView, parent);
     }
+
+
 
 
 }
