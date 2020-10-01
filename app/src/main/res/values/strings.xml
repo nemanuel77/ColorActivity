@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">ColorActivity</string>
+    <string name="txtDefault">Enter a Color!</string>
+    <string name="txtBtn">Switch It Up!</string>
+
+<!--    The following names are also accepted: red, blue, green, black, white, gray, cyan, magenta,-->
+<!--    yellow, lightgray, darkgray, grey, lightgrey, darkgrey, aqua, fuchsia, lime, maroon, navy,-->
+<!--    olive, purple, silver, and teal.-->
+
+    <string-array name="spinner_colors">
+        <item>RED</item>
+        <item>GREEN</item>
+        <item>BLUE</item>
+        <item>YELLOW</item>
+        <item>AQUA</item>
+        <item>PURPLE</item>
+        <item>NAVY</item>
+        <item>GRAY</item>
+        <item>OLIVE</item>
+        <item>FUCHSIA</item>
+    </string-array>
+
+</resources>
